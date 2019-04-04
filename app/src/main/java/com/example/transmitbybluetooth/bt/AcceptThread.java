@@ -67,7 +67,7 @@ public class AcceptThread extends Thread {
                             break;
                         case Common.STATE_NONE:
                         case Common.STATE_CONNECTED:
-                            Log.e(TAG, "run: 老子已经链接了，你要我断开？？？");
+                            Log.e(TAG, "run: 老子已经链接了，你要我断开？？？"+this);
                             try {
                                 socket.close();
                             } catch (IOException e) {

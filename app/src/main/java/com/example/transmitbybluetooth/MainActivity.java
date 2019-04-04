@@ -91,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
                     Log.e(TAG, "handleMessage: " + deviceMac);
                     BluetoothDevice device = mBluetoothAdapter.getRemoteDevice(deviceMac);
                     if (device!=null){
-
                         mChatService.connect(device, true);
                     }
                     break;
